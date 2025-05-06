@@ -4,10 +4,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface DataRepository extends JpaRepository<DataEntity, String> {
+public interface DataRepository extends JpaRepository<DataEntity, String>, DataEntityRepository {
 
     @Override
-    void deleteById(String name);
-
-    DataEntity getDataEntitiesByName(String name);
+    DataEntity findByName(String name);
 }

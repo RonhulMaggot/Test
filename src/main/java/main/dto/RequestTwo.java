@@ -6,11 +6,11 @@ import lombok.NoArgsConstructor;
 @Getter
 @NoArgsConstructor
 public class RequestTwo extends Request {
-    private String secondName;
+    private String second;
 
 
-    public RequestTwo(String firstName, String secondName) {
-        super(firstName);
-        this.secondName = secondName;
+    public RequestTwo(String first, String second) {
+        super(first);
+        this.second = second;
     }
 }
