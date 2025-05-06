@@ -12,4 +12,9 @@ public class ResponseSum extends Response {
         super(code);
         sum = firstNum + secondNum;
     }
+
+    public ResponseSum(int code) {
+        super(code);
+        sum = 0;
+    }
 }

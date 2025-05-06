@@ -10,5 +10,5 @@ public interface DatabaseService {
 
     Response deleteById(Request name);
 
-    ResponseSum getValueSum(String firstName, String secondName);
+    ResponseSum getValueSum(String first, String second);
 }

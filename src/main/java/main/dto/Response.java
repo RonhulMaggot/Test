@@ -22,6 +22,12 @@ public class Response {
             case 3:
                 description = "There is no pair of this names!";
                 break;
+            case 4:
+                description = "There is no such name!";
+                break;
+            case 5:
+                description = "Wrong input!";
+                break;
             default:
                 description = "Something wrong!";
                 break;
